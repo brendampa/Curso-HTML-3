@@ -28,7 +28,7 @@ body{
 }
 .cabecalho__menu{
     display: flex;
-    gap: 80px
+    gap: 20px
 }
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
