@@ -1,21 +1,20 @@
-```
+<h1>Portfólio Front-End</h1>
+  
+<h3>Olá, Bem vindo ao meu projeto do curso de HTML e CSS.</h3>
 
-# Portfólio Olá, Bem vindo ao meu projeto do curso de HTML e CSS.
+![image](https://github.com/user-attachments/assets/68032b9e-6ae3-4ee2-8ad6-c76142c4defa)
 
-![image](https://github.com/user-attachments/assets/8b6b33fd-280f-4be6-92ad-2f1bb0fbda69)
 
 ## Ferramentas utilizadas:
 
-* HTML
+<p>HTML</p> 
 
-* CSS
+<p>CSS</p>
 
-* JavaScript
+<p>JavaScript</p>
 
-* Flex-box
+<p>FlexBox</p>
 
 ## Feito por:
 
 ### Brenda Assunção
-
-```
