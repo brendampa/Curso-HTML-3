@@ -17,4 +17,4 @@
 
 ## Feito por:
 
-### Brenda Assunção
+### Brenda Mendes
