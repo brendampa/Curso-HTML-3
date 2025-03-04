@@ -6,6 +6,7 @@
     --cor-secundaria:#86A788;
     --cor-terciaria:#D2665A;
     --cor-quaternaria:#000000;
+
     --font-principal: "Krona One", sans-serif;
     --fonte-secundaria: "Montserrat", sans-serif;
 }
@@ -24,19 +25,17 @@ body{
     color: var(--cor-secundaria);
 }
 .cabecalho{
-    padding: 2% 0 0 15%;
+    padding: 2% 0% 0% 15%;
 }
 .cabecalho__menu{
     display: flex;
-    gap: 20px
+    gap: 80px;
 }
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     font-size: 1.5rem;
     color: var(--cor-terciaria);
-    margin: 0 10px;
-    padding: 5px 10px;
     text-decoration: none;
 }
 .cabecalho__menu__link:hover{
@@ -65,17 +64,16 @@ body{
 
 .apresentacao__conteudo__titulo{
 
-    font-size: 2.25rem; /* 16px equivale a 1 rem. Rem é medida relativa e acompanha a responsividade. Px é absoluto, ou seja, fixo.*/
+    font-size: 2rem; /* 16px equivale a 1 rem. Rem é medida relativa e acompanha a responsividade. Px é absoluto, ou seja, fixo.*/
     font-family: var(--font-principal);
 }
 .titulo-destaque {
     color: var(--cor-terciaria)
 }
 .apresentacao__conteudo__texto{
-    font-size: 1.25rem ;
+    font-size: 1.5rem ;
     font-family: var(--fonte-secundaria);
     text-align: justify;
-
 }
 
 .apresentacao__conteudo__links{
@@ -94,21 +92,21 @@ body{
 .apresentacao__conteudo__links__navegacao{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     gap:16px;
     color: var(--cor-quaternaria);
     border: 2px solid var(--cor-secundaria);
     width: 50%;
     text-align: center;
-    align-content: center;
+    /*align-content: center;*/
     border-radius: 8px; /* arredondar borda*/
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
-    padding: 21.5 px 0; /*Distância entre o conteúdo e a borda. Primeiro valor vertical(21.5) e segundo(0) horizontal.*/
+    padding: 21.5px 0; /*Distância entre o conteúdo e a borda. Primeiro valor vertical(21.5) e segundo(0) horizontal.*/
     text-decoration: none;
     font-weight: 600;
 }
-.apresentacao__conteudo__links__link:hover{
+.apresentacao__conteudo__links__navegacao:hover{
     background-color: var(--cor-secundaria);
     color: var(--cor-principal);
 }
@@ -168,6 +166,7 @@ body{
     }
     .cabecalho__menu{
         justify-content: center;
+        gap: 20px;
     }
     .apresentacao{
         flex-direction: column-reverse;
@@ -181,6 +180,8 @@ body{
     }
     .apresentacaoHoobie__conteudo{
         width: auto;
-
+    }
+    .apresentacao__conteudo__texto{
+        padding: 0% 2%;
     }
 }
