@@ -184,4 +184,7 @@ body{
     .apresentacao__conteudo__texto{
         padding: 0% 2%;
     }
+    .rodape__acessibilidade{
+        color: var(--cor-principal);
+    }
 }
