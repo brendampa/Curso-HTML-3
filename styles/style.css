@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-principal: #FFF7F3;
+    --cor-secundaria:#86A788;
+    --cor-terciaria:#D2665A;
+    --cor-quaternaria:#000000;
+    --font-principal: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding:0;
+}
+p{
+    color: var(--cor-quaternaria);
+}
+body{
+    /* height: 100vh; para que ocupe 100% da pág*/
+    box-sizing: border-box; /* para manter  aresponsividade: escala de elementos filho em relação ao pai*/
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.cabecalho__menu__link:hover{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
+    border-radius: 8px;
+}
+
+.apresentacao {
+
+    padding: 5% 15%; /* 5% vertial e 15% horizontal*/
+    display: flex; /* disposição na tela. consultar documentação css-tricks!*/
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+ 
+}
+.apresentacao__conteudo{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.apresentacao__conteudo__titulo{
+
+    font-size: 2.25rem; /* 16px equivale a 1 rem. Rem é medida relativa e acompanha a responsividade. Px é absoluto, ou seja, fixo.*/
+    font-family: var(--font-principal);
+}
+.titulo-destaque {
+    color: var(--cor-terciaria)
+}
+.apresentacao__conteudo__texto{
+    font-size: 1.25rem ;
+    font-family: var(--fonte-secundaria);
+    text-align: justify;
+
+}
+
+.apresentacao__conteudo__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.apresentacao__conteudo__links__subtitulo{
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__conteudo__links__navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    color: var(--cor-quaternaria);
+    border: 2px solid var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    border-radius: 8px; /* arredondar borda*/
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    padding: 21.5 px 0; /*Distância entre o conteúdo e a borda. Primeiro valor vertical(21.5) e segundo(0) horizontal.*/
+    text-decoration: none;
+    font-weight: 600;
+}
+.apresentacao__conteudo__links__link:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+.apresentacao__imagem {
+    width: 50%;
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    gap: 100px  ;
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/*CSS PÁG HOBBBIES*/
+
+.apresentacaoHobbies {
+    padding: 8% 5%; /* 5% vertial e 15% horizontal*/
+    display: flex; /* disposição na tela. consultar documentação css-tricks!*/
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.apresentacaoHoobie__conteudo__imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.apresentacaoHoobie__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:12px
+}
+.apresentacaoHoobie__conteudo__descricao{
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+}
+.rodape__acessibilidade{
+    background-color: var(--cor-terciaria);
+    border-radius: 6px;
+    width: 200px;
+}
+.rodape__acessibilidade:hover{
+    background-color: var(--cor-principal);
+    
+}
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .apresentacaoHobbies{
+        flex-direction: column-reverse;
+    }
+    .apresentacaoHoobie__conteudo{
+        width: auto;
+
+    }
+}

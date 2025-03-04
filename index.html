@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contents="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <title>Portfólio da Brenda</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="hobbies.html">Hobbies</a>
+        </nav>
+    </header>
+    <main class="apresentacao"> 
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Acompanhe uma desenvolvedora iniciante na carreira de <strong class="titulo-destaque"> Front-End </strong> </h1>
+            <p class="apresentacao__conteudo__texto">Olá! Sou Brenda Mendes. Estou iniciando o aprendizado em desenvolvimento em Front-end, com especialidade em JavaScript, HTML e CSS. Caso queira acompanhar o meu desenvolvimento ou entrar em contato, me segue nas redes sociais abaixo. </p>
+            <div class="apresentacao__conteudo__links">
+                <h2 class="apresentacao__conteudo__links__subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao__conteudo__links__navegacao" href="https://www.linkedin.com/in/brenda-mendes/" target="_blank"><img src="./assets/linkedin.png" alt="linkedin"> LinkedIn
+                </a>
+                
+                <a class="apresentacao__conteudo__links__navegacao" href="https://github.com/brendampa" target="_blank"> <img src="./assets/github.png" alt="Github"> Github 
+                </a>
+            </div>
+        </section>
+
+        <img class="apresentacao__imagem" src="./assets/mulher.jpg" alt="foto da modelo programando">
+
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Brenda Assunção</p>
+        <button class="rodape__acessibilidade" onclick="speakText()">Acessibilidade</button>
+    </footer>
+    <script src="responsiveVoice.js" defer></script>
+</body>
+</html>
